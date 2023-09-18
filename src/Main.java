@@ -2,20 +2,12 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
 
-        double price;
-        double salesTax;
-        double total;
+        double price = 24.99;
+        double salesTax = price * .05;
+        double finalPrice = price + salesTax;
 
-        System.out.println("Input a price: ");
-        Scanner input = new Scanner(System.in);
-
-        price = input.nextDouble();
-
-        salesTax = (price * 0.05);
-        total = (price + salesTax);
-
-        System.out.println("The base price is: " + price);
-        System.out.println("The sales tax is: " + salesTax);
-        System.out.println("The total is: " + total);
+        System.out.println("Price of Item: " + price);
+        System.out.println("Sales Tax: " + salesTax);
+        System.out.println("Final Price including tax: " + finalPrice);
     }
 }
